@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+
+        <!-- Main Menu -->
+        <menuitem name="School Application"
+            id="school_menu_root"
+            sequence="1" />
+
+        <!-- Child of Sub Menu -->
+        <menuitem name="Application"
+            id="application_child_menu"
+            action="action_my_model_name_view"
+            parent="school_menu_root"
+        />
+        <menuitem name="Student"
+            id="student_child_menu"
+            action="student_action_view"
+            parent="school_menu_root"
+        />
+        
+    </data>
+</odoo>
